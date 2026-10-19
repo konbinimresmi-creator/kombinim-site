@@ -3,105 +3,374 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
 <title>Kombinim Gizlilik Politikası</title>
 <style>
-  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #5f6368; --accent: #c62828; --line: #e0e0e0; }
+  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #5f6368; --accent: #c62828; --line: #e0e0e0; --soft: #f6f6f6; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0e0f11; --fg: #f1f1f1; --muted: #a0a4a8; --accent: #e5392f; --line: #2a2c30; }
+    :root { --bg: #0e0f11; --fg: #f1f1f1; --muted: #a0a4a8; --accent: #ff6b5e; --line: #2a2c30; --soft: #17191c; }
   }
   body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
-  .date { color: var(--muted); margin: 0 0 24px; }
-  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 20px 0 4px; }
+  .muted { color: var(--muted); }
+  .summary { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: .95rem; }
   th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); }
+  nav ol { columns: 2; column-gap: 32px; padding-left: 20px; }
+  @media (max-width: 600px) { nav ol { columns: 1; } }
   a { color: var(--accent); }
 </style>
 </head>
 <body>
 <main>
-<h1>Kombinim Gizlilik Politikası</h1>
-<p class="date">Yürürlük tarihi: 19 Ekim 2026</p>
+<h1>Kombinim Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p class="muted">Yürürlük tarihi: 20 Ekim 2026 · Sürüm 1.0</p>
 
-<p>Bu politika, Kombinim mobil uygulamasının ("Uygulama") hangi kişisel verileri
-neden topladığını, nasıl sakladığını ve haklarını nasıl kullanabileceğini anlatır.
-6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri
-Koruma Tüzüğü (GDPR) esas alınmıştır.</p>
-
-<h2>1. Veri sorumlusu</h2>
-<p>Kombinim geliştiricisi. İletişim: <a href="mailto:ILETISIM_EPOSTASI">ILETISIM_EPOSTASI</a></p>
-
-<h2>2. Topladığımız veriler</h2>
-<table>
-  <tr><th>Veri</th><th>Neden</th></tr>
-  <tr><td>E-posta adresi ve şifre (şifre geri döndürülemez şekilde saklanır)</td>
-      <td>Hesap oluşturmak, giriş yapmak, doğrulama ve şifre sıfırlama kodu göndermek</td></tr>
-  <tr><td>Google ile girişte Google hesabının e-posta adresi ve adı</td>
-      <td>Google hesabınla giriş yapabilmen</td></tr>
-  <tr><td>Eklediğin kıyafet fotoğrafları ve bilgileri (ad, kategori, renk, kumaş,
-      mevsim, mağaza linki, giyilme sayısı)</td>
-      <td>Dolabını göstermek, kombin önermek, verilerini yedeklemek</td></tr>
-  <tr><td>Kombinlerin, beğenilerin ve beğenmediklerin</td>
-      <td>Önerileri zevkine göre kişiselleştirmek</td></tr>
-  <tr><td>Cinsiyet tercihi (Kadın / Erkek / Diğer)</td>
-      <td>Sana uygun kombin ve alışveriş önerileri sunmak</td></tr>
-  <tr><td>Topluluk istatistiği: beğendiğin/giydiğin kombinlerdeki renk ikilileri
-      (ör. "bej + lacivert") ve cinsiyet tercihin</td>
-      <td>Tüm kullanıcılara popüler renk uyumlarını göstermek</td></tr>
-</table>
-<p>Uygulama reklam göstermez, konumunu, rehberini veya cihaz tanımlayıcılarını
-toplamaz. Verilerin satılmaz ve reklam amacıyla paylaşılmaz.</p>
-
-<h2>3. Topluluk istatistiği</h2>
-<p>Topluluk istatistiği yalnızca toplam olarak kullanılır: Bir renk uyumu ancak en
-az 3 farklı kişi tarafından işaretlendiyse gösterilir ve hiçbir kullanıcı başka
-birinin seçimlerini göremez. Bu katkıyı Uygulamada <b>Profil &gt; Topluluk
-önerilerine katkıda bulun</b> anahtarından istediğin zaman kapatabilirsin.</p>
-
-<h2>4. Verilerin nerede saklanır</h2>
+<div class="summary">
+<h3>Kısaca</h3>
 <ul>
-  <li><b>Telefonunda:</b> Dolabın ve fotoğrafların önce cihazında saklanır.</li>
-  <li><b>Bulut yedeği:</b> Giriş yaptığında verilerin, yalnızca senin hesabının
-    erişebildiği şekilde <a href="https://supabase.com/privacy">Supabase</a>
-    sunucularında (Avrupa bölgesi) yedeklenir.</li>
-  <li><b>E-postalar:</b> Doğrulama ve şifre sıfırlama kodları Google (Gmail)
-    altyapısıyla gönderilir.</li>
-  <li><b>Google ile giriş:</b> <a href="https://policies.google.com/privacy">Google</a>
-    tarafından sağlanır.</li>
+  <li>Sadece uygulamanın çalışması için gereken verileri topluyoruz: hesabın, dolabın, kombinlerin ve tercihlerin.</li>
+  <li><b>Reklam yok, takip yok, analiz aracı yok.</b> Verilerini satmıyor, kiralamıyor, reklam için kullanmıyoruz.</li>
+  <li>Verilerine yalnızca sen erişebilirsin; başka kullanıcılar senin dolabını göremez.</li>
+  <li>Topluluk istatistiği anonimdir, en az 3 kişi olmadan gösterilmez ve istediğin an kapatabilirsin.</li>
+  <li>Hesabını uygulamanın içinden tek dokunuşla, tüm verilerinle birlikte kalıcı olarak silebilirsin.</li>
 </ul>
-<p>Bu hizmet sağlayıcılar yurt dışında bulunabilir; verilerin bu nedenle KVKK
-madde 9 kapsamında yurt dışına aktarılır. Aktarım açık rızana ve hizmetin
-sunulması için gereklilik hukuki sebebine dayanır.</p>
+</div>
 
-<h2>5. Mağaza linkleri</h2>
-<p>Mağaza linkiyle ürün eklediğinde ürün sayfası doğrudan mağazanın sitesinden
-açılır. O sitenin kendi gizlilik politikası ve çerezleri geçerlidir; Kombinim bu
-sitelerin topladığı verilerden sorumlu değildir.</p>
+<nav>
+<h2>İçindekiler</h2>
+<ol>
+  <li><a href="#sorumlu">Veri sorumlusu ve iletişim</a></li>
+  <li><a href="#kapsam">Kapsam</a></li>
+  <li><a href="#veriler">Topladığımız veriler</a></li>
+  <li><a href="#toplamadiklarimiz">Toplamadığımız veriler</a></li>
+  <li><a href="#amac">Amaçlar ve hukuki sebepler</a></li>
+  <li><a href="#topluluk">Topluluk istatistiği</a></li>
+  <li><a href="#cihaz">Cihazında saklananlar</a></li>
+  <li><a href="#izinler">Uygulama izinleri</a></li>
+  <li><a href="#paylasim">Verilerin paylaşıldığı taraflar</a></li>
+  <li><a href="#yurtdisi">Yurt dışına aktarım</a></li>
+  <li><a href="#magaza">Mağaza linkleri ve üçüncü taraf siteler</a></li>
+  <li><a href="#odeme">Ödemeler (Premium)</a></li>
+  <li><a href="#saklama">Saklama süreleri</a></li>
+  <li><a href="#silme">Hesap ve veri silme</a></li>
+  <li><a href="#guvenlik">Güvenlik önlemleri</a></li>
+  <li><a href="#ihlal">Veri ihlali durumunda</a></li>
+  <li><a href="#otomatik">Otomatik öneriler</a></li>
+  <li><a href="#cocuklar">Çocuklar</a></li>
+  <li><a href="#haklar">Hakların</a></li>
+  <li><a href="#basvuru">Başvuru yöntemi</a></li>
+  <li><a href="#sikayet">Şikâyet hakkı</a></li>
+  <li><a href="#degisiklik">Değişiklikler</a></li>
+  <li><a href="#english">Summary in English</a></li>
+</ol>
+</nav>
 
-<h2>6. Saklama süresi ve silme</h2>
-<p>Verilerin hesabın açık olduğu sürece saklanır. Hesabını sildiğinde bulut
-yedeğin, fotoğrafların ve topluluk istatistiğine verdiğin katkılar kalıcı olarak
-silinir. Hesap silmenin nasıl yapılacağı:
-<a href="hesap-silme.html">Hesap ve veri silme</a>.</p>
+<h2 id="sorumlu">1. Veri sorumlusu ve iletişim</h2>
+<p>Kişisel verilerin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında
+veri sorumlusu sıfatıyla Kombinim uygulamasının geliştiricisi tarafından işlenir.</p>
+<ul>
+  <li><b>Veri sorumlusu:</b> VERI_SORUMLUSU_ADI (Kombinim geliştiricisi)</li>
+  <li><b>E-posta:</b> <a href="mailto:ILETISIM_EPOSTASI">ILETISIM_EPOSTASI</a></li>
+  <li><b>Ülke:</b> Türkiye</li>
+</ul>
+<p>Gizlilikle ilgili her soru, talep ve şikâyetin için bu adrese yazabilirsin.</p>
 
-<h2>7. Güvenlik</h2>
-<p>Veriler cihaz ile sunucu arasında şifreli bağlantı (HTTPS) ile taşınır. Sunucu
-tarafında her kullanıcı yalnızca kendi verisine erişebilir.</p>
+<h2 id="kapsam">2. Kapsam</h2>
+<p>Bu metin; Kombinim Android uygulamasını ("Uygulama"), uygulamanın kullandığı sunucuları ve
+bu web sayfalarını kapsar. Avrupa Birliği'nden kullanan kişiler için AB Genel Veri Koruma
+Tüzüğü ("GDPR") kapsamındaki hakları da ayrıca belirtilmiştir.</p>
 
-<h2>8. Çocuklar</h2>
-<p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek onlardan veri
-toplamaz.</p>
+<h2 id="veriler">3. Topladığımız veriler</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Veri</th><th>Nereden gelir</th><th>Nerede saklanır</th></tr>
+  <tr><td><b>Kimlik ve iletişim:</b> e-posta adresi</td>
+      <td>Kayıt olurken sen girersin</td><td>Sunucu (hesap)</td></tr>
+  <tr><td><b>Şifre</b> (yalnızca geri döndürülemez özet/hash hâlinde; düz hâli kimse tarafından görülemez)</td>
+      <td>Kayıt olurken sen girersin</td><td>Sunucu (hesap)</td></tr>
+  <tr><td><b>Google hesabı bilgileri:</b> Google ile giriş yaparsan e-posta adresin, adın ve
+      profil fotoğrafı bağlantın; Google'ın verdiği hesap kimliği</td>
+      <td>Google (senin onayınla)</td><td>Sunucu (hesap)</td></tr>
+  <tr><td><b>Doğrulama kodları:</b> kayıt ve şifre sıfırlama için gönderilen tek kullanımlık kodlar</td>
+      <td>Sistem üretir</td><td>Sunucu (kısa süreli)</td></tr>
+  <tr><td><b>Dolap içeriği:</b> kıyafet, ayakkabı ve aksesuar fotoğrafları; ad, kategori, renk,
+      desen renkleri, kumaş, mevsim, mağaza linki, eklenme tarihi, giyilme sayısı, son giyilme
+      tarihi, kirli sepeti durumu</td>
+      <td>Sen eklersin</td><td>Cihazın + bulut yedeği</td></tr>
+  <tr><td><b>Kombinler ve tercihler:</b> kaydettiğin kombinler, beğendiğin ve beğenmediğin
+      kombinler, değiştirdiğin parçalar, bunlardan oluşan zevk profili</td>
+      <td>Uygulamayı kullanırken oluşur</td><td>Cihazın + bulut yedeği</td></tr>
+  <tr><td><b>Cinsiyet tercihi</b> (Kadın / Erkek / Diğer) ve topluluk katkısı açık/kapalı ayarı</td>
+      <td>Sen seçersin</td><td>Cihazın + bulut yedeği</td></tr>
+  <tr><td><b>Topluluk istatistiği kayıtları:</b> renk ikilisi (ör. "bej + lacivert"), olumlu/olumsuz
+      işaret, cinsiyet tercihi, tarih ve hesabına bağlı teknik kimlik</td>
+      <td>Kombin beğenince/giyince oluşur (ayar açıksa)</td><td>Sunucu</td></tr>
+  <tr><td><b>Üyelik bilgisi:</b> Premium olup olmadığın</td>
+      <td>Uygulama</td><td>Cihazın + bulut yedeği</td></tr>
+  <tr><td><b>Teknik kayıtlar:</b> sunuculara bağlanırken IP adresin, bağlantı zamanı, cihaz/uygulama
+      türü bilgisi (user-agent) ve hata kayıtları</td>
+      <td>Bağlantı sırasında otomatik</td><td>Hizmet sağlayıcıların sunucuları (kısa süreli)</td></tr>
+  <tr><td><b>Yazışmalar:</b> bize e-posta gönderirsen e-posta adresin ve mesajın içeriği</td>
+      <td>Sen gönderirsin</td><td>E-posta kutusu</td></tr>
+</table>
+</div>
+<p>Kıyafet fotoğraflarına yanlışlıkla başka kişileri, yüzleri ya da özel bilgileri
+(adres, belge vb.) eklememeni öneririz. Fotoğraflarının içeriğini biz incelemeyiz ve
+başka bir amaçla kullanmayız.</p>
 
-<h2>9. Hakların</h2>
-<p>KVKK madde 11 ve GDPR kapsamında verilerine erişme, düzeltme, silme, işlemeye
-itiraz etme ve verilerinin bir kopyasını isteme hakkına sahipsin. Talebini
-<a href="mailto:ILETISIM_EPOSTASI">ILETISIM_EPOSTASI</a> adresine
-gönderebilirsin; en geç 30 gün içinde yanıtlanır.</p>
+<h2 id="toplamadiklarimiz">4. Toplamadığımız veriler</h2>
+<ul>
+  <li>Konum, rehber, arama kaydı, SMS, mikrofon kaydı</li>
+  <li>Reklam kimliği veya cihaz tanımlayıcıları (IMEI vb.)</li>
+  <li>Kart ya da banka bilgileri (ödemeler tamamen Google Play üzerinden yapılır)</li>
+  <li>Sağlık, din, etnik köken gibi özel nitelikli kişisel veriler</li>
+  <li>Uygulama kullanımına dair analiz veya takip verisi: uygulamada hiçbir analiz,
+    reklam ya da takip aracı (SDK) bulunmaz.</li>
+</ul>
 
-<h2>10. Değişiklikler</h2>
-<p>Bu politika güncellenirse yeni tarih bu sayfada yayınlanır.</p>
+<h2 id="amac">5. Amaçlar ve hukuki sebepler</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Amaç</th><th>Hukuki sebep (KVKK md. 5 / GDPR md. 6)</th></tr>
+  <tr><td>Hesap oluşturmak, giriş yapmak, e-postanı doğrulamak, şifreni sıfırlamak</td>
+      <td>Sözleşmenin kurulması ve ifası (KVKK 5/2-c; GDPR 6/1-b)</td></tr>
+  <tr><td>Dolabını göstermek, kombin önermek, zevkini öğrenmek, kirli sepeti ve bavul özelliklerini sunmak</td>
+      <td>Sözleşmenin ifası (KVKK 5/2-c; GDPR 6/1-b)</td></tr>
+  <tr><td>Verilerini buluta yedeklemek ve cihaz değiştirdiğinde geri yüklemek</td>
+      <td>Sözleşmenin ifası (KVKK 5/2-c; GDPR 6/1-b)</td></tr>
+  <tr><td>Cinsiyetine uygun kombin ve alışveriş önerisi sunmak</td>
+      <td>Sözleşmenin ifası; tercihi sen seçersin ve değiştirebilirsin</td></tr>
+  <tr><td>Anonim topluluk istatistiği oluşturmak</td>
+      <td>Meşru menfaat (KVKK 5/2-f; GDPR 6/1-f); ayarı kapatarak itiraz edebilirsin</td></tr>
+  <tr><td>Güvenliği sağlamak, kötüye kullanımı ve saldırıları önlemek, hataları gidermek</td>
+      <td>Meşru menfaat ve veri güvenliği yükümlülüğü (KVKK 5/2-f, md. 12; GDPR 6/1-f, md. 32)</td></tr>
+  <tr><td>Taleplerini ve şikâyetlerini yanıtlamak</td>
+      <td>Hukuki yükümlülük ve meşru menfaat (KVKK 5/2-ç, 5/2-f)</td></tr>
+  <tr><td>Yasal yükümlülükleri yerine getirmek, yetkili makam taleplerini karşılamak</td>
+      <td>Kanunlarda açıkça öngörülme ve hukuki yükümlülük (KVKK 5/2-a, 5/2-ç; GDPR 6/1-c)</td></tr>
+  <tr><td>Premium üyelik (ödeme sistemi eklendiğinde)</td>
+      <td>Sözleşmenin ifası (KVKK 5/2-c; GDPR 6/1-b)</td></tr>
+</table>
+</div>
+<p>Verilerin bu amaçlar dışında kullanılmaz. Yeni bir amaç ortaya çıkarsa önce bu metni
+güncelleriz ve gerekiyorsa onayını isteriz.</p>
+
+<h2 id="topluluk">6. Topluluk istatistiği</h2>
+<p>Bir kombini beğendiğinde, beğenmediğinde ya da giydiğinde, o kombindeki <b>yalnızca renk
+ikilileri</b> (ör. "siyah + beyaz") ve cinsiyet tercihin kaydedilir. Fotoğrafların, kıyafet
+adların ve linklerin bu istatistiğe <b>girmez</b>.</p>
+<ul>
+  <li>Bu kayıtları hiçbir kullanıcı okuyamaz; uygulama yalnızca toplam sonucu alır.</li>
+  <li>Bir renk uyumu ancak <b>en az 3 farklı kişi</b> işaretlediyse gösterilir; her kişi her uyum için bir kez sayılır.</li>
+  <li>Yalnızca son 180 günün kayıtları hesaba katılır.</li>
+  <li>Uygulamada <b>Profil &gt; Topluluk önerilerine katkıda bulun</b> anahtarını kapatarak katkıyı istediğin an durdurabilirsin.</li>
+  <li>Hesabını silersen bu kayıtların da kalıcı olarak silinir.</li>
+</ul>
+
+<h2 id="cihaz">7. Cihazında saklananlar</h2>
+<ul>
+  <li>Dolabın, fotoğrafların, kombinlerin ve ayarların uygulamanın telefonundaki <b>özel
+    klasöründe</b> saklanır; diğer uygulamalar bu klasöre erişemez.</li>
+  <li>Oturumunun açık kalması için gereken giriş anahtarı (oturum belirteci) cihazında tutulur.
+    Çıkış yaptığında silinir.</li>
+  <li>Giriş ekranında kolaylık olsun diye <b>son kullandığın e-posta adresi</b> ve tema tercihin
+    cihazında hatırlanır. Şifren cihazda saklanmaz.</li>
+  <li>Mağaza sayfalarını açan uygulama içi tarayıcı, o mağazaların çerezlerini cihazında tutabilir
+    (aşağıda 11. bölüm).</li>
+  <li>Uygulamayı kaldırdığında ya da telefon ayarlarından uygulama verilerini sildiğinde cihazdaki
+    tüm bu veriler silinir. Bulut yedeğin ise hesabını silene kadar kalır.</li>
+</ul>
+
+<h2 id="izinler">8. Uygulama izinleri</h2>
+<ul>
+  <li><b>İnternet:</b> giriş yapmak, yedeklemek ve mağaza linklerini açmak için.</li>
+  <li><b>Kamera ve galeri:</b> Uygulama kalıcı bir kamera veya depolama izni istemez. Fotoğraf
+    çekmek ya da seçmek istediğinde telefonunun kendi kamera/galeri ekranı açılır ve yalnızca
+    senin seçtiğin fotoğraf uygulamaya verilir.</li>
+</ul>
+
+<h2 id="paylasim">9. Verilerin paylaşıldığı taraflar</h2>
+<p>Verilerin <b>satılmaz, kiralanmaz ve reklam amacıyla paylaşılmaz.</b> Yalnızca hizmeti
+sunabilmek için aşağıdaki hizmet sağlayıcılar (veri işleyenler) kullanılır. Bu sağlayıcılar
+verileri yalnızca bizim adımıza ve talimatımızla işler:</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Sağlayıcı</th><th>Ne için</th><th>Hangi veriler</th></tr>
+  <tr><td><a href="https://supabase.com/privacy">Supabase Inc.</a> (ve kullandığı bulut altyapısı)</td>
+      <td>Hesap sistemi, veritabanı, fotoğraf depolama</td>
+      <td>Hesap bilgileri, bulut yedeği, topluluk kayıtları, teknik kayıtlar</td></tr>
+  <tr><td><a href="https://policies.google.com/privacy">Google LLC / Google Ireland Ltd.</a></td>
+      <td>Google ile giriş; doğrulama e-postalarının gönderimi (Gmail); uygulamanın dağıtımı ve
+      ödemeler (Google Play)</td>
+      <td>E-posta adresi, Google hesap bilgileri, e-posta içeriği (doğrulama kodu), Play satın alma bilgileri</td></tr>
+  <tr><td><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Inc.</a></td>
+      <td>Bu gizlilik ve hesap silme sayfalarının yayınlanması</td>
+      <td>Sayfayı ziyaret edenlerin teknik kayıtları (IP adresi vb.)</td></tr>
+</table>
+</div>
+<p>Ayrıca kanunen zorunlu olduğu durumlarda (ör. mahkeme kararı veya yetkili kamu kurumu talebi)
+veriler yalnızca gerektiği kadarıyla yetkili makamlara verilebilir. Uygulamanın el değiştirmesi
+(devir, birleşme) durumunda veriler ancak bu politikadaki korumalar sürdürülerek aktarılır ve
+sana önceden bildirilir.</p>
+
+<h2 id="yurtdisi">10. Yurt dışına aktarım</h2>
+<p>Supabase sunucuları Avrupa bölgesinde bulunur; Google ve GitHub hizmetleri başka ülkelerdeki
+sunucuları da kullanabilir. Bu nedenle verilerin Türkiye dışına aktarılır. Aktarım, KVKK
+madde 9 ve GDPR'a uygun güvencelerle (hizmet sağlayıcıların standart sözleşmeleri ve veri
+işleme sözleşmeleri) ve yalnızca hizmetin sunulması için gereken ölçüde yapılır. Bu güvencelerin
+yeterli olmadığı bir durumda açık rızana başvurulur.</p>
+
+<h2 id="magaza">11. Mağaza linkleri ve üçüncü taraf siteler</h2>
+<ul>
+  <li>Mağaza linkiyle ürün eklediğinde ürün sayfası ve fotoğrafı <b>doğrudan senin cihazından
+    mağazanın sitesine</b> bağlanılarak alınır. Bu sırada mağaza, kendi politikasına göre IP
+    adresini görebilir ve çerez kullanabilir.</li>
+  <li>Bot korumalı siteler (ör. Zara) uygulama içindeki tarayıcıda açılır; o sitenin çerezleri
+    cihazında, uygulamanın kendi alanında kalır ve uygulamayı kaldırınca silinir.</li>
+  <li>"Alışverişle tamamla" bölümündeki bağlantılar (Trendyol, Hepsiburada, Zara, Google)
+    telefonunun tarayıcısında açılır. Bu bağlantılara kişisel verin eklenmez; yalnızca aranacak
+    ürün adı (ör. "lacivert erkek gömlek") eklenir.</li>
+  <li>Bu sitelerin topladığı verilerden o siteler sorumludur; kendi gizlilik politikalarını
+    okumanı öneririz. Kombinim bu sitelerle verini paylaşmaz.</li>
+</ul>
+
+<h2 id="odeme">12. Ödemeler (Premium)</h2>
+<p>Premium üyelik ödemeleri eklendiğinde tamamen <b>Google Play Faturalandırma</b> üzerinden
+yapılacaktır. Kart veya banka bilgilerin bize hiçbir zaman ulaşmaz; yalnızca Google'dan
+satın almanın geçerli olup olmadığı bilgisini alırız. İade ve abonelik iptali Google Play
+kurallarına tabidir.</p>
+
+<h2 id="saklama">13. Saklama süreleri</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Veri</th><th>Süre</th></tr>
+  <tr><td>Hesap, bulut yedeği, fotoğraflar, topluluk kayıtları</td>
+      <td>Hesabın açık olduğu sürece; hesabı silince hemen silinir</td></tr>
+  <tr><td>Doğrulama ve şifre sıfırlama kodları</td><td>Kısa süre içinde geçersiz olur</td></tr>
+  <tr><td>Sunucu teknik kayıtları (IP adresi vb.)</td>
+      <td>Hizmet sağlayıcının güvenlik amaçlı tuttuğu kısa süre (genellikle birkaç gün ile birkaç hafta)</td></tr>
+  <tr><td>Sunucu yedek kopyaları</td><td>Hesap silindikten sonra en geç 30 gün içinde kendiliğinden silinir</td></tr>
+  <tr><td>Bizimle yazışmaların</td>
+      <td>Talebin sonuçlandıktan sonra en fazla 2 yıl (olası uyuşmazlıklara karşı), sonra silinir</td></tr>
+  <tr><td>Cihazındaki veriler</td><td>Uygulamayı kaldırana, verisini silene veya hesabını silene kadar</td></tr>
+</table>
+</div>
+<p>Saklama süresi dolan veriler silinir, yok edilir veya anonim hâle getirilir.</p>
+
+<h2 id="silme">14. Hesap ve veri silme</h2>
+<p>Hesabını uygulamada <b>Profil &gt; Hesabı sil</b> yolundan kalıcı olarak silebilirsin.
+Uygulamaya erişimin yoksa e-postayla da talep edebilirsin. Ayrıntılar:
+<a href="hesap-silme.html">Hesap ve veri silme</a>. Hesabını silmeden sadece bazı verilerini
+silmek istersen (ör. bir fotoğraf ya da beğeni geçmişi) bunu uygulamanın içinden
+yapabilir veya bize yazabilirsin.</p>
+
+<h2 id="guvenlik">15. Güvenlik önlemleri</h2>
+<p>Verilerini korumak için KVKK madde 12 ve GDPR madde 32 kapsamında şu teknik ve idari
+önlemleri alıyoruz:</p>
+<ul>
+  <li><b>Şifreli bağlantı:</b> Uygulama ile sunucular arasındaki tüm trafik HTTPS/TLS ile şifrelenir.</li>
+  <li><b>Şifreli depolama:</b> Hizmet sağlayıcının sunucularında veriler diskte şifreli olarak saklanır.</li>
+  <li><b>Şifre güvenliği:</b> Şifreler düz metin olarak değil, geri döndürülemez özet (hash) olarak tutulur; şifren bizim tarafımızdan görülemez.</li>
+  <li><b>Erişim kısıtlaması:</b> Veritabanında satır düzeyinde güvenlik (RLS) kullanılır; her kullanıcı yalnızca kendi verisine erişebilir. Fotoğraflar herkese açık olmayan, kullanıcıya özel klasörlerde tutulur.</li>
+  <li><b>Doğrulama kodları:</b> E-posta adresinin sana ait olduğu, gönderilen tek kullanımlık kodla doğrulanır; şifre sıfırlama da kodla yapılır.</li>
+  <li><b>En az yetki:</b> Uygulamada yalnızca herkese açık olması tasarlanmış anahtarlar bulunur; yönetici anahtarları uygulamada ve kaynak kodunda yer almaz. Yönetim paneline erişim yalnızca geliştiricidedir.</li>
+  <li><b>En az veri:</b> Yalnızca gereken veriler toplanır; reklam, analiz ve takip aracı kullanılmaz; uygulama yalnızca internet izni ister.</li>
+  <li><b>Uygulama bütünlüğü:</b> Uygulama, geliştiriciye ait imza anahtarıyla imzalanır ve yalnızca Google Play üzerinden dağıtılır.</li>
+  <li><b>Güncel tutma:</b> Kullanılan yazılım kütüphaneleri güvenlik güncellemelerine göre güncellenir.</li>
+</ul>
+<p>Senin de yapabileceklerin: güçlü ve başka yerde kullanmadığın bir şifre seç, telefonunda
+ekran kilidi kullan, uygulamayı yalnızca Google Play'den indir ve güncel tut, ortak kullanılan
+cihazlarda çıkış yap. Hiçbir çalışanımız veya uygulamamız senden şifreni ya da doğrulama kodunu
+<b>istemez</b>; böyle bir mesaj alırsan paylaşma ve bize bildir.</p>
+<p>Hiçbir sistem %100 güvenli değildir; ancak riskleri en aza indirmek için yukarıdaki önlemleri
+sürekli gözden geçiririz. Bir güvenlik açığı fark edersen lütfen
+<a href="mailto:ILETISIM_EPOSTASI?subject=Kombinim%20g%C3%BCvenlik%20bildirimi">ILETISIM_EPOSTASI</a>
+adresine bildir.</p>
+
+<h2 id="ihlal">16. Veri ihlali durumunda</h2>
+<p>Verilerinin yetkisiz kişilerce ele geçirildiğini öğrenirsek, KVKK madde 12/5 uyarınca durumu en
+kısa sürede ve en geç <b>72 saat</b> içinde Kişisel Verileri Koruma Kurulu'na bildiririz, etkilenen
+kullanıcılara e-posta ile haber veririz ve zararı sınırlamak için gerekli önlemleri alırız.</p>
+
+<h2 id="otomatik">17. Otomatik öneriler</h2>
+<p>Kombin önerileri ve puanları; renk uyumu, mevsim, parçaların ne zaman giyildiği, kendi
+beğenilerin ve anonim topluluk istatistiğine göre cihazında otomatik olarak hesaplanır. Bu öneriler
+yalnızca tavsiye niteliğindedir ve senin hakkında hukuki ya da benzeri önemli bir sonuç doğurmaz.
+Önerileri dilediğin gibi kullanabilir, değiştirebilir veya yok sayabilirsin; zevk profilini
+<b>Profil</b> ekranından sıfırlayabilirsin.</p>
+
+<h2 id="cocuklar">18. Çocuklar</h2>
+<p>Uygulama <b>13 yaşından küçük</b> çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri
+toplamaz. 18 yaşından küçüksen uygulamayı ebeveyninin veya velinin izniyle kullanmalısın. 13
+yaşından küçük bir çocuğun hesap açtığını fark edersen bize yaz; hesabı ve verilerini sileriz.</p>
+
+<h2 id="haklar">19. Hakların</h2>
+<p>KVKK madde 11 uyarınca şu haklara sahipsin:</p>
+<ol type="a">
+  <li>Kişisel verilerinin işlenip işlenmediğini öğrenme,</li>
+  <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+  <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+  <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+  <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+  <li>KVKK madde 7'deki şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+  <li>Düzeltme ve silme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+  <li>Münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etme,</li>
+  <li>Kanuna aykırı işleme nedeniyle zarara uğrarsan zararın giderilmesini talep etme.</li>
+</ol>
+<p>AB'deysen GDPR kapsamında ayrıca: verilerinin bir kopyasını makine tarafından okunabilir biçimde
+alma (taşınabilirlik), işlemenin kısıtlanmasını isteme, meşru menfaate dayanan işlemeye itiraz
+etme ve verdiğin onayı dilediğin zaman geri alma hakların vardır. Onayı geri alman, önceki
+işlemlerin hukuka uygunluğunu etkilemez.</p>
+<p>Verilerinin bir kısmını uygulamanın içinden kendin de yönetebilirsin: parçaları ve kombinleri
+düzenleyip silebilir, beğeni geçmişini sıfırlayabilir, cinsiyet tercihini değiştirebilir,
+topluluk katkısını kapatabilir ve hesabını silebilirsin.</p>
+
+<h2 id="basvuru">20. Başvuru yöntemi</h2>
+<p>Haklarını kullanmak için kayıtlı e-posta adresinden
+<a href="mailto:ILETISIM_EPOSTASI?subject=KVKK%20ba%C5%9Fvurusu">ILETISIM_EPOSTASI</a>
+adresine, adını ve talebini açıkça yazarak başvurabilirsin. Kimliğini doğrulamak için hesabına
+kayıtlı e-postadan yazmanı ya da ek doğrulama yapmamızı isteyebiliriz; bu, verilerinin başkasına
+verilmesini önlemek içindir. Başvurun en geç <b>30 gün</b> içinde ücretsiz olarak yanıtlanır
+(KVKK md. 13). İşlem ayrıca bir maliyet gerektirirse Kurul'un belirlediği tarife uygulanabilir.</p>
+
+<h2 id="sikayet">21. Şikâyet hakkı</h2>
+<p>Başvurunun reddedilmesi, yanıtı yetersiz bulman veya süresinde yanıt verilmemesi hâlinde
+Kişisel Verileri Koruma Kurulu'na (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>) şikâyette
+bulunabilirsin. AB'deysen, yaşadığın ülkedeki veri koruma otoritesine de başvurabilirsin.</p>
+
+<h2 id="degisiklik">22. Değişiklikler</h2>
+<p>Bu metni uygulamadaki veya mevzuattaki değişikliklere göre güncelleyebiliriz. Güncel sürüm her
+zaman bu sayfada yayınlanır ve yürürlük tarihi en üstte yazar. Önemli değişikliklerde uygulama
+içinden veya e-postayla önceden bilgi veririz.</p>
+<div class="table-wrap">
+<table>
+  <tr><th>Sürüm</th><th>Tarih</th><th>Değişiklik</th></tr>
+  <tr><td>1.0</td><td>20 Ekim 2026</td><td>İlk yayın</td></tr>
+</table>
+</div>
+
+<h2 id="english">23. Summary in English</h2>
+<p>Kombinim is a virtual wardrobe app. We collect only what the app needs: your account (email,
+hashed password or Google sign-in details), your wardrobe photos and item details, outfits, likes,
+gender preference, and optional anonymous colour-pair statistics (shown only when at least 3 users
+agree; can be turned off in Profile). Data is stored on your device and in a private cloud backup
+(Supabase, European region) that only your account can access, and is encrypted in transit and at
+rest. There are no ads, no analytics and no tracking SDKs; we never sell your data. Service
+providers: Supabase, Google (sign-in, email delivery, Google Play) and GitHub (hosting these pages).
+You can delete your account and all associated data in the app (Profile &gt; Delete account) or by
+emailing <a href="mailto:ILETISIM_EPOSTASI">ILETISIM_EPOSTASI</a>. You have rights under the Turkish
+KVKK and the EU GDPR (access, rectification, erasure, portability, restriction, objection) and may
+complain to the Turkish Personal Data Protection Authority or your local EU supervisory authority.
+The app is not intended for children under 13.</p>
+
+<p class="muted">İlgili sayfa: <a href="hesap-silme.html">Hesap ve veri silme</a></p>
 </main>
 </body>
 </html>
