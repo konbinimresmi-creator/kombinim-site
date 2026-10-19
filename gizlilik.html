@@ -30,7 +30,7 @@
 <body>
 <main>
 <h1>Kombinim Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="muted">Yürürlük tarihi: 20 Ekim 2026 · Sürüm 1.0</p>
+<p class="muted">Yürürlük tarihi: 20 Ekim 2026 · Sürüm 1.1</p>
 
 <div class="summary">
 <h3>Kısaca</h3>
@@ -155,7 +155,7 @@ başka bir amaçla kullanmayız.</p>
       <td>Hukuki yükümlülük ve meşru menfaat (KVKK 5/2-ç, 5/2-f)</td></tr>
   <tr><td>Yasal yükümlülükleri yerine getirmek, yetkili makam taleplerini karşılamak</td>
       <td>Kanunlarda açıkça öngörülme ve hukuki yükümlülük (KVKK 5/2-a, 5/2-ç; GDPR 6/1-c)</td></tr>
-  <tr><td>Premium üyelik (ödeme sistemi eklendiğinde)</td>
+  <tr><td>Premium aboneliğin satın alınması, yenilenmesi ve durumunun kontrolü</td>
       <td>Sözleşmenin ifası (KVKK 5/2-c; GDPR 6/1-b)</td></tr>
 </table>
 </div>
@@ -190,7 +190,9 @@ adların ve linklerin bu istatistiğe <b>girmez</b>.</p>
 
 <h2 id="izinler">8. Uygulama izinleri</h2>
 <ul>
-  <li><b>İnternet:</b> giriş yapmak, yedeklemek ve mağaza linklerini açmak için.</li>
+  <li><b>İnternet ve ağ durumu:</b> giriş yapmak, yedeklemek, mağaza linklerini açmak ve bağlantı olup olmadığını anlamak için.</li>
+  <li><b>Google Play faturalandırma:</b> Premium aboneliğini Google Play üzerinden satın alabilmen ve aboneliğinin durumunu kontrol edebilmek için.</li>
+  <li><b>Biyometrik / parmak izi tanımı:</b> Bu izin, Google ile giriş için kullanılan Google kimlik bileşeni tarafından uygulamaya eklenir. Kombinim parmak izine veya yüz verilerine erişmez, bunları toplamaz.</li>
   <li><b>Kamera ve galeri:</b> Uygulama kalıcı bir kamera veya depolama izni istemez. Fotoğraf
     çekmek ya da seçmek istediğinde telefonunun kendi kamera/galeri ekranı açılır ve yalnızca
     senin seçtiğin fotoğraf uygulamaya verilir.</li>
@@ -242,10 +244,17 @@ yeterli olmadığı bir durumda açık rızana başvurulur.</p>
 </ul>
 
 <h2 id="odeme">12. Ödemeler (Premium)</h2>
-<p>Premium üyelik ödemeleri eklendiğinde tamamen <b>Google Play Faturalandırma</b> üzerinden
-yapılacaktır. Kart veya banka bilgilerin bize hiçbir zaman ulaşmaz; yalnızca Google'dan
-satın almanın geçerli olup olmadığı bilgisini alırız. İade ve abonelik iptali Google Play
-kurallarına tabidir.</p>
+<p>Premium üyelik, aylık veya yıllık otomatik yenilenen bir aboneliktir ve ödemeleri tamamen <b>Google Play Faturalandırma</b> üzerinden
+yapılır. Kart veya banka bilgilerin bize hiçbir zaman ulaşmaz; yalnızca Google'dan
+aboneliğinin aktif olup olmadığı bilgisini alırız.</p>
+<ul>
+  <li>Abonelik, sen iptal edene kadar her dönem sonunda otomatik yenilenir.</li>
+  <li>İptal etmek için: Google Play &gt; Profil &gt; Ödemeler ve abonelikler &gt; Abonelikler &gt; Kombinim &gt; Aboneliği iptal et. Uygulamadaki Premium ekranında da bu sayfaya giden bir düğme vardır.</li>
+  <li>İptal edersen, ödediğin dönemin sonuna kadar Premium devam eder; sonra kapanır.</li>
+  <li>Ödeme alınamazsa Google Play kısa bir süre tekrar dener; yine alınamazsa abonelik ve Premium kapanır.</li>
+  <li>Uygulamayı silmek aboneliği <b>iptal etmez</b>; iptali Google Play'den yapmalısın.</li>
+  <li>İadeler Google Play iade kurallarına ve 6502 sayılı Tüketicinin Korunması Hakkında Kanun'a tabidir.</li>
+</ul>
 
 <h2 id="saklama">13. Saklama süreleri</h2>
 <div class="table-wrap">
@@ -281,7 +290,7 @@ yapabilir veya bize yazabilirsin.</p>
   <li><b>Erişim kısıtlaması:</b> Veritabanında satır düzeyinde güvenlik (RLS) kullanılır; her kullanıcı yalnızca kendi verisine erişebilir. Fotoğraflar herkese açık olmayan, kullanıcıya özel klasörlerde tutulur.</li>
   <li><b>Doğrulama kodları:</b> E-posta adresinin sana ait olduğu, gönderilen tek kullanımlık kodla doğrulanır; şifre sıfırlama da kodla yapılır.</li>
   <li><b>En az yetki:</b> Uygulamada yalnızca herkese açık olması tasarlanmış anahtarlar bulunur; yönetici anahtarları uygulamada ve kaynak kodunda yer almaz. Yönetim paneline erişim yalnızca geliştiricidedir.</li>
-  <li><b>En az veri:</b> Yalnızca gereken veriler toplanır; reklam, analiz ve takip aracı kullanılmaz; uygulama yalnızca internet izni ister.</li>
+  <li><b>En az veri:</b> Yalnızca gereken veriler toplanır; reklam, analiz ve takip aracı kullanılmaz; uygulama konum, rehber, kamera, mikrofon veya depolama izni istemez.</li>
   <li><b>Uygulama bütünlüğü:</b> Uygulama, geliştiriciye ait imza anahtarıyla imzalanır ve yalnızca Google Play üzerinden dağıtılır.</li>
   <li><b>Güncel tutma:</b> Kullanılan yazılım kütüphaneleri güvenlik güncellemelerine göre güncellenir.</li>
 </ul>
@@ -353,6 +362,7 @@ içinden veya e-postayla önceden bilgi veririz.</p>
 <table>
   <tr><th>Sürüm</th><th>Tarih</th><th>Değişiklik</th></tr>
   <tr><td>1.0</td><td>20 Ekim 2026</td><td>İlk yayın</td></tr>
+  <tr><td>1.1</td><td>20 Ekim 2026</td><td>Premium abonelik koşulları ve uygulama izinleri eklendi</td></tr>
 </table>
 </div>
 
