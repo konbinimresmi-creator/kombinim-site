@@ -30,7 +30,7 @@
 <body>
 <main>
 <h1>Kombinim Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="muted">Yürürlük tarihi: 20 Ekim 2026 · Sürüm 1.2</p>
+<p class="muted">Yürürlük tarihi: 27 Ekim 2026 · Sürüm 1.3</p>
 
 <div class="summary">
 <h3>Kısaca</h3>
@@ -114,6 +114,10 @@ Tüzüğü ("GDPR") kapsamındaki hakları da ayrıca belirtilmiştir.</p>
       <td>Kombin beğenince/giyince oluşur (ayar açıksa)</td><td>Sunucu</td></tr>
   <tr><td><b>"Üstünde gör" fotoğrafı:</b> bu özelliği kullanırsan yüklediğin kendi fotoğrafın ve oluşan deneme görüntüsü; ayrıca günlük sınır için deneme zamanı ve deneme kimliği</td>
       <td>Sen eklersin (isteğe bağlı, Premium)</td><td>Fotoğraf yalnızca cihazında (buluta yedeklenmez); deneme kaydı sunucuda</td></tr>
+  <tr><td><b>Yaklaşık konum:</b> izin verirsen telefonunun şehir düzeyindeki konumu (yaklaşık 1 km'ye yuvarlanmış koordinat)</td>
+      <td>Telefonun (isteğe bağlı, konum izniyle)</td><td><b>Saklanmaz</b>; yalnızca o anki havayı öğrenmek için kullanılır</td></tr>
+  <tr><td><b>Bavul için gidilecek yer:</b> yazdığın şehir/ülke adı ve yolculuk tarihleri</td>
+      <td>Sen yazarsın (isteğe bağlı)</td><td><b>Saklanmaz</b>; yalnızca hava tahmini için kullanılır</td></tr>
   <tr><td><b>Üyelik bilgisi:</b> Premium olup olmadığın</td>
       <td>Uygulama</td><td>Cihazın + bulut yedeği</td></tr>
   <tr><td><b>Teknik kayıtlar:</b> sunuculara bağlanırken IP adresin, bağlantı zamanı, cihaz/uygulama
@@ -130,7 +134,7 @@ başka bir amaçla kullanmayız.</p>
 <h2 id="toplamadiklarimiz">4. Toplamadığımız veriler</h2>
 <ul>
   <li>Yüz tanıma veya biyometrik tanımlama verisi: "Üstünde gör" fotoğrafın kimliğini tespit etmek için kullanılmaz.</li>
-  <li>Konum, rehber, arama kaydı, SMS, mikrofon kaydı</li>
+  <li>Kesin (GPS hassasiyetinde) konum, konum geçmişi; rehber, arama kaydı, SMS, mikrofon kaydı</li>
   <li>Reklam kimliği veya cihaz tanımlayıcıları (IMEI vb.)</li>
   <li>Kart ya da banka bilgileri (ödemeler tamamen Google Play üzerinden yapılır)</li>
   <li>Sağlık, din, etnik köken gibi özel nitelikli kişisel veriler</li>
@@ -196,6 +200,7 @@ adların ve linklerin bu istatistiğe <b>girmez</b>.</p>
 <ul>
   <li><b>İnternet ve ağ durumu:</b> giriş yapmak, yedeklemek, mağaza linklerini açmak ve bağlantı olup olmadığını anlamak için.</li>
   <li><b>Google Play faturalandırma:</b> Premium aboneliğini Google Play üzerinden satın alabilmen ve aboneliğinin durumunu kontrol edebilmek için.</li>
+  <li><b>Yaklaşık konum (isteğe bağlı):</b> "Bugünün havası" için bulunduğun şehrin sıcaklığını öğrenmek amacıyla istenir. Yalnızca yaklaşık (şehir düzeyi) konum izni istenir, kesin konum istenmez. İzin vermezsen kombinler aya göre tahmini havaya göre önerilir; izni istediğin an telefon ayarlarından kapatabilirsin.</li>
   <li><b>Biyometrik / parmak izi tanımı:</b> Bu izin, Google ile giriş için kullanılan Google kimlik bileşeni tarafından uygulamaya eklenir. Kombinim parmak izine veya yüz verilerine erişmez, bunları toplamaz.</li>
   <li><b>Kamera ve galeri:</b> Uygulama kalıcı bir kamera veya depolama izni istemez. Fotoğraf
     çekmek ya da seçmek istediğinde telefonunun kendi kamera/galeri ekranı açılır ve yalnızca
@@ -216,6 +221,12 @@ verileri yalnızca bizim adımıza ve talimatımızla işler:</p>
       <td>Google ile giriş; doğrulama e-postalarının gönderimi (Gmail); uygulamanın dağıtımı ve
       ödemeler (Google Play)</td>
       <td>E-posta adresi, Google hesap bilgileri, e-posta içeriği (doğrulama kodu), Play satın alma bilgileri</td></tr>
+  <tr><td><a href="https://api.met.no/doc/TermsOfService">Norveç Meteoroloji Enstitüsü (MET Norway)</a></td>
+      <td>Hava durumu ve hava tahmini</td>
+      <td>Yalnızca yuvarlanmış koordinat (kimliğin, e-postan veya hesabınla ilişkilendirilmez)</td></tr>
+  <tr><td>Google (Android konum ve adres çözümleme hizmeti)</td>
+      <td>Konumdan şehir adını, yazdığın şehir adından koordinatı bulmak</td>
+      <td>Koordinat ya da yazdığın yer adı</td></tr>
   <tr><td><a href="https://fashn.ai/privacy">FASHN AI Inc.</a> (ABD)</td>
       <td>"Üstünde gör": kıyafetin senin fotoğrafına yapay zekâyla giydirilmesi</td>
       <td>Yalnızca o deneme için: kendi fotoğrafın ve kombindeki kıyafet fotoğrafları. Sonuç en fazla 60 dakika sonra silinir; fotoğraflar başka amaçla kullanılmaz.</td></tr>
@@ -276,6 +287,7 @@ aboneliğinin aktif olup olmadığı bilgisini alırız.</p>
   <tr><td>"Üstünde gör" fotoğrafın</td><td>Yalnızca cihazında, sen silene veya hesabını silene kadar</td></tr>
   <tr><td>"Üstünde gör" deneme kayıtları (zaman ve kimlik)</td><td>Hesabın açık olduğu sürece; hesabı silince hemen silinir</td></tr>
   <tr><td>Hizmet sağlayıcıdaki (FASHN) deneme sonucu</td><td>En fazla 60 dakika</td></tr>
+  <tr><td>Konum ve bavul için yazdığın yer</td><td>Saklanmaz; hava bilgisi alındıktan sonra kullanılmaz (anlık hava telefonda en fazla 30 dakika hatırlanır)</td></tr>
   <tr><td>Bizimle yazışmaların</td>
       <td>Talebin sonuçlandıktan sonra en fazla 2 yıl (olası uyuşmazlıklara karşı), sonra silinir</td></tr>
   <tr><td>Cihazındaki veriler</td><td>Uygulamayı kaldırana, verisini silene veya hesabını silene kadar</td></tr>
@@ -300,7 +312,7 @@ yapabilir veya bize yazabilirsin.</p>
   <li><b>Erişim kısıtlaması:</b> Veritabanında satır düzeyinde güvenlik (RLS) kullanılır; her kullanıcı yalnızca kendi verisine erişebilir. Fotoğraflar herkese açık olmayan, kullanıcıya özel klasörlerde tutulur.</li>
   <li><b>Doğrulama kodları:</b> E-posta adresinin sana ait olduğu, gönderilen tek kullanımlık kodla doğrulanır; şifre sıfırlama da kodla yapılır.</li>
   <li><b>En az yetki:</b> Uygulamada yalnızca herkese açık olması tasarlanmış anahtarlar bulunur; yönetici anahtarları uygulamada ve kaynak kodunda yer almaz. Yönetim paneline erişim yalnızca geliştiricidedir.</li>
-  <li><b>En az veri:</b> Yalnızca gereken veriler toplanır; reklam, analiz ve takip aracı kullanılmaz; uygulama konum, rehber, kamera, mikrofon veya depolama izni istemez.</li>
+  <li><b>En az veri:</b> Yalnızca gereken veriler toplanır; reklam, analiz ve takip aracı kullanılmaz; uygulama yalnızca isteğe bağlı yaklaşık konum izni ister; kesin konum, rehber, kamera, mikrofon veya depolama izni istemez.</li>
   <li><b>Uygulama bütünlüğü:</b> Uygulama, geliştiriciye ait imza anahtarıyla imzalanır ve yalnızca Google Play üzerinden dağıtılır.</li>
   <li><b>Güncel tutma:</b> Kullanılan yazılım kütüphaneleri güvenlik güncellemelerine göre güncellenir.</li>
 </ul>
@@ -374,6 +386,7 @@ içinden veya e-postayla önceden bilgi veririz.</p>
   <tr><td>1.0</td><td>20 Ekim 2026</td><td>İlk yayın</td></tr>
   <tr><td>1.1</td><td>20 Ekim 2026</td><td>Premium abonelik koşulları ve uygulama izinleri eklendi</td></tr>
   <tr><td>1.2</td><td>24 Ekim 2026</td><td>"Üstünde gör" (sanal deneme) özelliği eklendi</td></tr>
+  <tr><td>1.3</td><td>27 Ekim 2026</td><td>Bugünün havası (yaklaşık konum) ve bavul için hava tahmini eklendi</td></tr>
 </table>
 </div>
 
@@ -383,7 +396,7 @@ hashed password or Google sign-in details), your wardrobe photos and item detail
 gender preference, and optional anonymous colour-pair statistics (shown only when at least 3 users
 agree; can be turned off in Profile). Data is stored on your device and in a private cloud backup
 (Supabase, European region) that only your account can access, and is encrypted in transit and at
-rest. There are no ads, no analytics and no tracking SDKs; we never sell your data. Service
+rest. With your permission, your approximate (city-level) location is used only to look up the current weather (via MET Norway) and is never stored. There are no ads, no analytics and no tracking SDKs; we never sell your data. Service
 providers: Supabase, Google (sign-in, email delivery, Google Play), FASHN AI (the optional "try it on" feature: your own photo is sent only for that request, kept only on your device, never used for face recognition, and results are deleted within 60 minutes) and GitHub (hosting these pages).
 You can delete your account and all associated data in the app (Profile &gt; Delete account) or by
 emailing <a href="mailto:konbinim.resmi@gmail.com">konbinim.resmi@gmail.com</a>. You have rights under the Turkish
