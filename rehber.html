@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kombinim Kullanım Rehberi</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1a1a1a; --muted: #5f6368; --accent: #c62828; --line: #e0e0e0; --soft: #f6f6f6; --tip: #fff4e5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e0f11; --fg: #f1f1f1; --muted: #a0a4a8; --accent: #ff6b5e; --line: #2a2c30; --soft: #17191c; --tip: #2a1d10; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  h2 { font-size: 1.35rem; margin: 44px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.08rem; margin: 24px 0 6px; }
+  .muted { color: var(--muted); }
+  .box { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px; margin: 12px 0; }
+  .tip { background: var(--tip); border-radius: 12px; padding: 10px 16px; margin: 12px 0; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  th { background: var(--soft); }
+  nav ol { columns: 2; column-gap: 32px; padding-left: 20px; }
+  @media (max-width: 600px) { nav ol { columns: 1; } }
+  a { color: var(--accent); }
+  b.btn { background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+<h1>Kombinim Kullanım Rehberi</h1>
+<p class="muted">Dolabını telefonuna taşı, her gün sana yakışan kombini saniyeler içinde bul.</p>
+
+<div class="box">
+<h3>Kombinim sana ne kazandırır?</h3>
+<ul>
+  <li><b>Sabah "ne giysem?" derdine son:</b> Dolabındaki parçalardan renk uyumu, hava durumu ve senin zevkine göre puanlanmış kombinler önerir.</li>
+  <li><b>Dolabını bilirsin:</b> Neyin var, neyi hiç giymedin, hangi parça kirli: hepsi tek ekranda.</li>
+  <li><b>Akıllı alışveriş:</b> Elindeki bir parçayı tamamlamak için hangi renkte, hangi kumaşta ne alman gerektiğini söyler, mağazalarda tek dokunuşla arar.</li>
+  <li><b>Valiz derdine son:</b> Gideceğin şehrin hava tahminine göre en az parçayla en çok kombini çıkarır.</li>
+  <li><b>Zamanla seni tanır:</b> Beğendiğin ve beğenmediğin her kombinden öğrenir, öneriler giderek sana daha çok benzer.</li>
+</ul>
+</div>
+
+<nav>
+<h2>İçindekiler</h2>
+<ol>
+  <li><a href="#baslangic">İlk adımlar: hesap açma</a></li>
+  <li><a href="#ekranlar">Ekranları tanıyalım</a></li>
+  <li><a href="#ekle-foto">Fotoğrafla parça ekleme</a></li>
+  <li><a href="#ekle-link">Mağaza linkiyle parça ekleme</a></li>
+  <li><a href="#bilgiler">Parça bilgileri neden önemli?</a></li>
+  <li><a href="#dolap">Dolabım ekranı</a></li>
+  <li><a href="#oneriler">Kombin önerileri</a></li>
+  <li><a href="#puan">Uyum puanı nasıl hesaplanır?</a></li>
+  <li><a href="#hava">Bugünün havası ve sıcaklık ayarı</a></li>
+  <li><a href="#parcalar">Önerilere girecek parçaları seçmek</a></li>
+  <li><a href="#kombinlerim">Kombinlerim ve kendin oluştur</a></li>
+  <li><a href="#tamamla">Bu parçayla kombin yap</a></li>
+  <li><a href="#alisveris">Alışverişle tamamla</a></li>
+  <li><a href="#giydim">"Giydim" ve kirli sepeti</a></li>
+  <li><a href="#bavul">Bavul hazırla</a></li>
+  <li><a href="#profil">Profil ve ayarlar</a></li>
+  <li><a href="#premium">Premium</a></li>
+  <li><a href="#yedek">Bulut yedeği ve telefon değiştirme</a></li>
+  <li><a href="#topluluk">Topluluk önerileri</a></li>
+  <li><a href="#ipuclari">En iyi sonuç için ipuçları</a></li>
+  <li><a href="#sss">Sık sorulan sorular ve sorun çözme</a></li>
+  <li><a href="#iletisim">Bize ulaş</a></li>
+</ol>
+</nav>
+
+<h2 id="baslangic">1. İlk adımlar: hesap açma</h2>
+<p>Uygulamayı ilk açtığında giriş ekranı gelir. Hesap, dolabının buluta yedeklenmesi ve telefon değiştirdiğinde kaybolmaması için gereklidir. Her hesabın dolabı kendine özeldir; başka kimse göremez.</p>
+<h3>Yol 1: E-posta ve şifreyle</h3>
+<ol>
+  <li><b class="btn">Kayıt ol</b> sekmesine dokun.</li>
+  <li>E-posta adresini ve en az 6 karakterli bir şifre yaz, şifreyi tekrar yaz.</li>
+  <li><b class="btn">Kayıt ol</b>'a bas. E-postana <b>6 haneli bir kod</b> gelir.</li>
+  <li>Kodu uygulamadaki kutuya yaz. Hesabın açıldı!</li>
+</ol>
+<div class="tip">💡 Kod gelmediyse e-postanın <b>Spam / Gereksiz</b> klasörüne bak. Birkaç dakika sonra "Kodu tekrar gönder" diyebilirsin.</div>
+<h3>Yol 2: Google ile</h3>
+<p><b class="btn">Google ile devam et</b>'e dokun, Google hesabını seç. Şifre ya da kod gerekmez.</p>
+<h3>Şifremi unuttum</h3>
+<p>Giriş ekranında <b class="btn">Şifremi unuttum</b>'a dokun, e-postanı yaz. Gelen 6 haneli kodu ve yeni şifreni yazarak şifreni yenilersin.</p>
+<h3>İlk açılışta cinsiyet sorusu</h3>
+<p>Uygulama sana <b>Kadın / Erkek / Belirtmem</b> diye sorar. Bu seçim önerileri ve alışveriş aramalarını sana uygun hâle getirir. Örneğin erkek seçtiysen elbise önerilmez, mağaza aramalarında "erkek gömlek" aranır. İstediğin zaman Profil'den değiştirebilirsin.</p>
+
+<h2 id="ekranlar">2. Ekranları tanıyalım</h2>
+<p>Ekranın altında 4 sekme vardır:</p>
+<div class="table-wrap"><table>
+  <tr><th>Sekme</th><th>Ne işe yarar?</th></tr>
+  <tr><td>👔 <b>Dolabım</b></td><td>Tüm kıyafet, ayakkabı ve aksesuarların. Yeni parça eklemek için sağ alttaki <b class="btn">Ekle</b> düğmesi buradadır.</td></tr>
+  <tr><td>🃏 <b>Kombinler</b></td><td>Senin için hazırlanan kombin önerileri, kaydettiğin kombinler, kendin kombin oluşturma ve sağ üstte bavul hazırlama.</td></tr>
+  <tr><td>🧺 <b>Kirli sepeti</b></td><td>Giydiğin ve yıkanmayı bekleyen parçalar; kumaşa ve renge göre makine yüklerine ayrılmış hâlde (Premium).</td></tr>
+  <tr><td>👤 <b>Profil</b></td><td>Üyelik, cinsiyet, sıcaklık ayarın, zevk profilin, tema, hesap ve yedekleme ayarları.</td></tr>
+</table></div>
+
+<h2 id="ekle-foto">3. Fotoğrafla parça ekleme</h2>
+<ol>
+  <li>Dolabım'da sağ alttaki <b class="btn">Ekle</b>'ye dokun.</li>
+  <li>Üstte <b>Fotoğraf</b> seçili olsun.</li>
+  <li><b class="btn">Fotoğraf çek</b> ile hemen çek ya da <b class="btn">Galeriden seç</b> ile var olan bir fotoğrafı seç.</li>
+  <li>Uygulama <b>arka planı otomatik olarak siler</b> ("Arka plan siliniyor..." yazar). Böylece kıyafetin dolabında tertemiz, arka plansız görünür.</li>
+  <li>Sonucu beğenmezsen <b>Arka planı sil</b> anahtarını kapatıp fotoğrafın kendisine dönebilirsin.</li>
+  <li>Aşağıda <b>kategori, renk, kumaş ve hava</b> bilgilerini seç (bkz. <a href="#bilgiler">5. bölüm</a>).</li>
+  <li><b class="btn">Dolaba kaydet</b>'e bas.</li>
+</ol>
+<div class="tip">📸 <b>Güzel fotoğraf için:</b> Parçayı düz ve tek renk bir zemine (yatak, masa, duvar) ser, yukarıdan ve iyi ışıkta çek. Kıyafetin rengi zeminden farklı olursa arka plan çok daha temiz silinir.</div>
+<div class="tip">⏳ Arka plan silme aracı ilk kullanımda telefonuna bir kez iner (internet gerekir). "Silme aracı ilk kez iniyor" yazarsa biraz bekle. Olmazsa <b class="btn">Arka planı tekrar sil</b>'e dokun.</div>
+
+<h2 id="ekle-link">4. Mağaza linkiyle parça ekleme</h2>
+<p>Bir mağazadan aldığın ya da beğendiğin ürünü fotoğraf çekmeden ekleyebilirsin.</p>
+<ol>
+  <li>Mağazanın uygulamasında ya da sitesinde ürünü aç, <b>Paylaş → Linki kopyala</b> de.</li>
+  <li>Kombinim'de <b class="btn">Ekle</b> → üstte <b>Mağaza linki</b>'ni seç.</li>
+  <li>Linki kutuya yapıştır (sağdaki 📋 simgesi de yapıştırır) ve <b class="btn">Ürün bilgisini getir</b>'e bas.</li>
+  <li>Ürünün adı ve fotoğrafı otomatik gelir. Sayfada birden çok fotoğraf varsa <b>sadece kıyafetin göründüğü</b> (modelin üstünde olmayan) fotoğraf önerilir; istersen <b class="btn">Başka fotoğraf seç</b> ile değiştir.</li>
+  <li>Bazı siteler (ör. Zara) sayfayı uygulama içi tarayıcıda açar; ürün bulununca kendiliğinden kapanır ya da altta <b class="btn">Bu ürünü ekle</b>'ye basarsın.</li>
+  <li>Bilgileri kontrol et ve kaydet. Ürün linki parçanın içinde saklanır; sonra parçaya dokunup mağaza sayfasını tekrar açabilirsin.</li>
+</ol>
+<div class="tip">🔗 Ürün bilgisi gelmezse <b class="btn">Fotoğrafı kendim ekleyeyim</b> de; link yine kaydedilir.</div>
+
+<h2 id="bilgiler">5. Parça bilgileri neden önemli?</h2>
+<p>Kombinim önerilerini bu bilgilere göre yapar. Ne kadar eksiksiz girersen öneriler o kadar isabetli olur.</p>
+<div class="table-wrap"><table>
+  <tr><th>Bilgi</th><th>Ne işe yarar?</th></tr>
+  <tr><td><b>Kategori</b> (Üst giyim, Alt giyim, Elbise, Dış giyim, Ayakkabı, Çanta, Takı, Aksesuar)</td><td>Kombinin iskeletini kurar: bir üst + bir alt (ya da elbise) + ayakkabı + uygun olanlar.</td></tr>
+  <tr><td><b>Türü</b> (sadece Takı ve Aksesuar: saat, kemer, şapka, gözlük, atkı, kolye, küpe...)</td><td>Bir kombinde her türden bir tane olur: saat + kemer + kolye birlikte önerilebilir ama iki saat önerilmez. Adından tahmin edilir ("Siyah saat" → Saat).</td></tr>
+  <tr><td><b>Renk</b></td><td>Uyum puanının en önemli parçası. Desenli bir parçaysa <b>Desenli</b>'yi seç ve desende hangi renkler olduğunu işaretle.</td></tr>
+  <tr><td><b>Kumaş</b></td><td>Kirli sepetinde doğru yıkama programına ayırır; ayrıca havaya göre tahmin yapar (keten yazlık, yün kışlık).</td></tr>
+  <tr><td><b>Hangi havada giyilir?</b> (Sıcak / Ilık / Soğuk)</td><td>Bugünün havasına ve bavula göre doğru parçaların seçilmesini sağlar. Birden fazla seçebilirsin. Boş bırakırsan kumaşa ve türe göre tahmin edilir.</td></tr>
+</table></div>
+
+<h2 id="dolap">6. Dolabım ekranı</h2>
+<ul>
+  <li>Üstteki çiplerle kategoriye göre süz: <b>Tümü (16)</b>, <b>Üst giyim (4)</b> gibi; parantez içi o kategorideki parça sayısıdır.</li>
+  <li>Kartın üstündeki <b>1×, 2×</b> o parçayı kaç kez giydiğini gösterir.</li>
+  <li>Bir parçaya dokununca ayrıntılar açılır:
+    <ul>
+      <li><b class="btn">Bu parçayla kombin yap</b>: o parçayı merkeze alıp kombin kurar (bkz. <a href="#tamamla">12. bölüm</a>).</li>
+      <li><b class="btn">Bugün giydim</b> / <b class="btn">Giydim, kirliye at</b>: giyilme sayısını artırır; Premium'da yıkanabilir parçaları kirli sepetine atar.</li>
+      <li>Ürün linki varsa mağaza sayfasını açma.</li>
+      <li>Düzenle ✏️ ve Sil 🗑️.</li>
+    </ul>
+  </li>
+  <li>Ücretsiz sürümde dolabına <b>10 parça</b> ekleyebilirsin; daha fazlası için Premium.</li>
+</ul>
+
+<h2 id="oneriler">7. Kombin önerileri</h2>
+<p><b>Kombinler</b> sekmesinin en üstünde "Senin için önerimiz" kartı vardır. Her kartta bir kombin, uyum puanı (0–100) ve nedenleri yazar.</p>
+<div class="table-wrap"><table>
+  <tr><th>Düğme</th><th>Ne olur?</th></tr>
+  <tr><td><b class="btn">Tamamını beğendim</b></td><td>Kombin <b>Kombinlerim</b>'e kaydedilir; uygulama bu renk uyumlarını sevdiğini öğrenir.</td></tr>
+  <tr><td><b class="btn">Tamamını beğenmedim</b></td><td>Kombin bir daha önerilmez; uygulama bu uyumları pek sevmediğini öğrenir.</td></tr>
+  <tr><td><b class="btn">Parça değiştir</b></td><td>Kombindeki bir parçayı seçersin; yerine dolabındaki en uyumlu başka parça gelir. Çıkardığın parça o kombinde tekrar önerilmez.</td></tr>
+  <tr><td><b class="btn">Atla</b></td><td>Hiçbir şey öğrenmeden sıradaki öneriye geçer.</td></tr>
+</table></div>
+<ul>
+  <li><b>🔥 Popüler</b> etiketi: Kombinim kullanıcılarının çok sevdiği bir renk uyumu demektir.</li>
+  <li>Kartın üstündeki çiplerle havayı seçebilirsin: <b>📍 Bugünün havası</b>, <b>Tümü</b>, <b>Sıcak</b>, <b>Ilık</b>, <b>Soğuk</b>.</li>
+  <li>Öneriler bittiyse "Yeniden dene" ile yenileri gelir; dolabına parça ekledikçe seçenek artar.</li>
+</ul>
+
+<h2 id="puan">8. Uyum puanı nasıl hesaplanır?</h2>
+<p>Puan, moda stilistlerinin kullandığı kurallara dayanır:</p>
+<ul>
+  <li><b>Renk uyumu (en önemlisi):</b> Lacivert + beyaz, siyah + beyaz, gri + beyaz, bej + beyaz gibi <b>klasik ikililer</b> en yüksek puanı alır. Siyah, beyaz, gri, lacivert, bej ve krem gibi <b>nötr renkler</b> her şeyle uyar. Kombinde 3'ten fazla canlı renk ya da 2 desenli parça varsa puan düşer.</li>
+  <li><b>Hava:</b> Parçalar seçilen havaya uymuyorsa puan düşer. Kışlık bir kazakla yazlık bir keten pantolon aynı kombine hiç konmaz.</li>
+  <li><b>Tazelik:</b> Uzun süredir giymediğin parçalar öne çıkar; hep aynı şeyleri giymezsin.</li>
+  <li><b>Senin zevkin:</b> Beğendiğin ve beğenmediğin kombinlerden öğrenilir.</li>
+  <li><b>Topluluk:</b> Diğer kullanıcıların sevdiği renk uyumları biraz öne çıkar.</li>
+</ul>
+<p>Kartta yazan nedenler ("Gri ve beyaz: stilistlerin sık önerdiği klasik ikili" gibi) puanın neden yüksek ya da düşük olduğunu açıklar.</p>
+
+<h2 id="hava">9. Bugünün havası ve sıcaklık ayarı</h2>
+<h3>Bugünün havası</h3>
+<ol>
+  <li>Kombinler'de <b class="btn">📍 Bugünün havası</b> çipine dokun.</li>
+  <li>İlk seferde telefon <b>konum izni</b> ister. "Uygulamayı kullanırken" dersen bulunduğun şehrin sıcaklığı alınır (sadece şehir düzeyinde, yaklaşık konum).</li>
+  <li>Çipte örneğin <b>"13 °C · Soğuk"</b> yazar; öneriler bu havaya göre gelir. Yağmur varsa 🌧️ görünür ve kombinlere mont / yağmurluk eklenir.</li>
+</ol>
+<div class="tip">🔒 Konumun hiçbir yerde saklanmaz; sadece o anki havayı öğrenmek için kullanılır. İzin vermezsen öneriler bulunduğumuz aya göre tahmini havaya göre yapılır.</div>
+<h3>Sıcaklık ayarım (Profil)</h3>
+<p>Herkes farklı üşür. Önerilen ayar: <b>15 °C altı soğuk</b> (mont), <b>15–20 °C ılık</b>, <b>20 °C ve üstü sıcak</b> (tişört havası). Profil'deki <b>Sıcaklık ayarım</b> kartındaki iki kaydırıcıyla kendine göre değiştir. Örneğin "13 °C altı benim için soğuk" dersen 14 °C'de sana ılık kombinler gelir. Beğenmezsen <b class="btn">Önerilen ayara dön</b>'e dokun.</p>
+
+<h2 id="parcalar">10. Önerilere girecek parçaları seçmek</h2>
+<p>Bazı parçaları kombinlerde görmek istemiyor musun? Örneğin saat ya da mont?</p>
+<ol>
+  <li>Kombinler'de "Senin için önerimiz" yanındaki <b class="btn">Parçalar</b>'a dokun.</li>
+  <li>İstemediklerini kapat: <b>Dış giyim</b> (mont, ceket), <b>Ayakkabı</b>, <b>Çanta</b>, <b>Takı</b> (kolye, küpe...), <b>Aksesuar</b> (saat, kemer, şapka...).</li>
+  <li>Kapattıkların başlığın altında "Önerilmeyenler: ..." olarak yazar. Üst, alt ve elbise her zaman önerilir.</li>
+</ol>
+
+<h2 id="kombinlerim">11. Kombinlerim ve kendin oluştur</h2>
+<ul>
+  <li><b>Kombinlerim:</b> Beğendiğin öneriler ve kendi oluşturdukların burada durur. Birine dokununca puanı, nedenleri ve parçaları görünür; düzenleyebilir, silebilir ya da "Bu kombini giydim" diyebilirsin.</li>
+  <li><b>Kendin oluştur:</b> <b class="btn">+ Kendin oluştur</b> ile her kategoriden istediğin parçayı seçerek kendi kombinini kur; puanı anında görürsün.</li>
+</ul>
+
+<h2 id="tamamla">12. Bu parçayla kombin yap</h2>
+<p>"Bu yeni gömleği neyle giysem?" sorusunun cevabı. Dolabım'da parçaya dokun → <b class="btn">Bu parçayla kombin yap</b>.</p>
+<ul>
+  <li><b>Dolabımdan:</b> O parçayı merkeze alan, dolabındaki diğer parçalarla en uyumlu kombinler gelir. Beğendiğini <b class="btn">Beğendim, kaydet</b> ile Kombinlerim'e ekle.</li>
+  <li><b>Alışverişle:</b> Dolabında uygun parça yoksa ya da yeni bir şey almak istiyorsan (bkz. <a href="#alisveris">13. bölüm</a>).</li>
+  <li>Hava çipleriyle (Tümü / Sıcak / Ilık / Soğuk) sonuçları daralt.</li>
+</ul>
+
+<h2 id="alisveris">13. Alışverişle tamamla</h2>
+<h3>Kombini tamamla</h3>
+<p>En üstteki kartta iki seçenek vardır:</p>
+<ul>
+  <li><b class="btn">Uygulama seçsin</b>: Eksik parçaları (örneğin gömlek için pantolon ve ayakkabı; soğukta mont da), renklerini ve kumaşlarını uygulama seçer. Renkler hem senin parçanla hem birbiriyle uyumludur. Kombinin puanı gösterilir; her parça için <b>Trendyol, Hepsiburada, Zara, Google</b> araması tek dokunuştur. <b class="btn">Başka renkler</b> ile farklı bir öneri gelir.</li>
+  <li><b class="btn">Ben seçeyim</b>: Hangi parçaların kombine gireceğini işaretlersin, her birinin rengini (★ = parçanla en uyumlu renkler) ve kumaşını sen seçersin, <b class="btn">Kombini oluştur</b> dersin.</li>
+</ul>
+<p>Uygulamanın seçtiğini <b class="btn">Ben değiştireyim</b> ile kendine göre düzenleyebilirsin.</p>
+<h3>Fikir kartları ve Özelleştir</h3>
+<p>Aşağıdaki kartlarda kategori kategori uyumlu renkler sıralıdır; renge dokunup mağazada ararsın. <b class="btn">Özelleştir</b> ile kimin için, ne aradığın (ör. "kargo pantolon"), birden çok renk ve kumaş seçip kendi aramanı oluşturabilirsin.</p>
+<div class="tip">🛍️ Beğendiğin ürünü aldıktan sonra linkini <b>Ekle → Mağaza linki</b> ile dolabına ekle.</div>
+
+<h2 id="giydim">14. "Giydim" ve kirli sepeti</h2>
+<ul>
+  <li>Bir parçayı ya da kombini giydiğinde <b class="btn">Bugün giydim</b> de. Giyilme sayısı artar, uygulama o parçayı bir süre daha az önerir (tazelik).</li>
+  <li><b>Premium'da</b> düğme <b class="btn">Giydim, kirliye at</b> olur: yıkanabilir parçalar (üst, alt, elbise, dış giyim) <b>kirli sepetine</b> düşer. Ayakkabı, çanta, takı ve aksesuar sepete gitmez.</li>
+  <li>Kirli parçalar <b>önerilmez</b>. Böylece öneriler hep temiz kıyafetlerden gelir.</li>
+  <li>Yanlışlıkla bastıysan çıkan mesajdaki <b class="btn">Geri al</b>'a dokun.</li>
+  <li><b>Kirli sepeti</b> sekmesi parçaları makine yüklerine ayırır: <b>kumaşa göre</b> program (Normal 30–40 °C, Hassas, Kot, Elde yıkama, Yıkanmaz/özel bakım) ve <b>renge göre</b> (açık, koyu, renkli). Her yükün yanında bakım ipucu yazar.</li>
+  <li>Yıkadıktan sonra <b class="btn">Yıkandı</b> de; parçalar dolaba geri döner.</li>
+</ul>
+
+<h2 id="bavul">15. Bavul hazırla (Premium)</h2>
+<ol>
+  <li>Kombinler'in sağ üstündeki 🧳 simgesine dokun.</li>
+  <li><b>Nereye gidiyorsun?</b> kutusuna şehir ve ülke yaz (ör. "Roma, İtalya") ve 🔍'e bas. Birden çok yer bulunursa hangisi olduğunu seç.</li>
+  <li><b>Başlangıç</b> tarihini ve <b>kaç gün</b> kalacağını seç.</li>
+  <li>O yerin <b>günlük hava tahmini</b> gelir (en düşük / en yüksek sıcaklık, yağmurlu günlerde 🌧️) ve hava (Sıcak / Ilık / Soğuk) kendiliğinden seçilir. İstersen elle değiştirebilirsin.</li>
+  <li>Uygulama dolabından en az parçayla en çok kombini çıkaran bir liste hazırlar: üstler, altlar, ayakkabı ve gerekirse mont. Soğukta iki mont, ılıkta mont yok; yağmur ya da soğuk günler varsa bir mont eklenir.</li>
+  <li>Bavula koyduğun parçaları işaretleyerek takip et.</li>
+</ol>
+<div class="tip">📅 Gerçek hava tahmini yaklaşık 9 gün ileriyi kapsar. Daha uzak tarihlerde o ayın mevsimine göre tahmin edilir; yolculuğa 9 gün kala tekrar bakman iyi olur.</div>
+
+<h2 id="profil">16. Profil ve ayarlar</h2>
+<div class="table-wrap"><table>
+  <tr><th>Ayar</th><th>Ne işe yarar?</th></tr>
+  <tr><td><b>Üyelik</b></td><td>Ücretsiz mi Premium mu olduğun ve parça sayın. Dokununca Premium ekranı açılır.</td></tr>
+  <tr><td><b>Sıcaklık ayarım</b></td><td>Hangi sıcaklıkta soğuk / sıcak hissettiğini ayarla (bkz. <a href="#hava">9. bölüm</a>).</td></tr>
+  <tr><td><b>Cinsiyet</b></td><td>Öneriler, alışveriş aramaları ve topluluk tercihleri buna göre ayarlanır.</td></tr>
+  <tr><td><b>Topluluk önerilerine katkıda bulun</b></td><td>Açıkken beğendiğin kombinlerin renk uyumları anonim olarak istatistiğe katılır (bkz. <a href="#topluluk">19. bölüm</a>).</td></tr>
+  <tr><td><b>Zevk profilin</b></td><td>Uygulamanın ne kadar beğeni öğrendiğini gösterir. Sıfırlarsan baştan öğrenmeye başlar.</td></tr>
+  <tr><td><b>Tema</b></td><td>Koyu, Açık ya da telefonunla aynı (Sistem).</td></tr>
+  <tr><td><b>Hesap</b></td><td>Bulut yedeğinin durumu, şimdi eşitle, çıkış yap ve hesabı sil.</td></tr>
+</table></div>
+
+<h2 id="premium">17. Premium</h2>
+<p>Premium ile şunlar açılır:</p>
+<ul>
+  <li><b>Sınırsız parça</b> (ücretsizde 10)</li>
+  <li><b>Kirli sepeti</b> ve makine yüklerine ayırma</li>
+  <li><b>Bavul hazırlama asistanı</b></li>
+</ul>
+<p>Profil → Üyelik ya da sınır dolduğunda açılan Premium ekranından <b>aylık</b> ya da <b>yıllık</b> planı seç; ödeme Google Play üzerinden yapılır. Abonelik sen iptal edene kadar her dönem sonunda otomatik yenilenir. İptal için <b>Google Play → Profil → Ödemeler ve abonelikler → Abonelikler → Kombinim</b>; iptal edersen ödediğin dönemin sonuna kadar Premium devam eder. Telefon değiştirdiysen Premium ekranındaki <b class="btn">Satın alımlarımı geri yükle</b>'ye dokun.</p>
+<div class="tip">⚠️ Uygulamayı silmek aboneliği iptal etmez; iptali Google Play'den yapmalısın.</div>
+
+<h2 id="yedek">18. Bulut yedeği ve telefon değiştirme</h2>
+<ul>
+  <li>Eklediğin her parça, fotoğraf, kombin ve beğeni birkaç saniye içinde <b>bulut yedeğine</b> de kaydedilir. Yedeğe yalnızca sen erişebilirsin.</li>
+  <li>İnternet yoksa uygulama yine çalışır; değişiklikler internet gelince gönderilir.</li>
+  <li><b>Yeni telefon:</b> Kombinim'i indir, aynı hesapla giriş yap; dolabın, kombinlerin ve ayarların geri gelir.</li>
+  <li>Profil → Hesap kartında yedeğin durumu ("yedeklendi", "eşitleniyor") yazar; dokunarak hemen eşitleyebilirsin.</li>
+</ul>
+
+<h2 id="topluluk">19. Topluluk önerileri</h2>
+<p>Kombin beğendiğinde ya da giydiğinde, o kombindeki <b>yalnızca renk ikilileri</b> (ör. "bej + lacivert") cinsiyet tercihinle birlikte <b>anonim</b> olarak sayılır. Fotoğrafların, parça adların gönderilmez; kimse senin seçimlerini tek tek göremez. Bir uyum en az 3 farklı kişi tarafından seçildiyse "🔥 Popüler" olarak öne çıkar. İstemezsen Profil'den kapat.</p>
+
+<h2 id="ipuclari">20. En iyi sonuç için ipuçları</h2>
+<ul>
+  <li>🎨 <b>Rengi mutlaka gir.</b> Uyum puanının yarısından fazlası renge bağlı.</li>
+  <li>🌦️ <b>"Hangi havada giyilir?"</b> sorusunu cevapla; mont yazın, keten kışın önerilmez.</li>
+  <li>👍 <b>Bol bol beğen / beğenme.</b> İlk 10–20 oydan sonra öneriler belirgin şekilde sana benzer.</li>
+  <li>👟 <b>Ayakkabılarını da ekle.</b> Ayakkabısız kombinin puanı düşük olur.</li>
+  <li>✅ <b>"Giydim"i işaretle.</b> Uygulama aynı şeyleri tekrar tekrar önermez, unuttuğun parçaları hatırlatır.</li>
+  <li>📍 <b>Bugünün havasını kullan,</b> sabah tek bakışta havaya uygun kombini gör.</li>
+  <li>🧥 <b>Sıcaklık ayarını kendine göre yap;</b> çabuk üşüyorsan soğuk eşiğini yükselt.</li>
+</ul>
+
+<h2 id="sss">21. Sık sorulan sorular ve sorun çözme</h2>
+<h3>"Arka plan silinemedi" diyor.</h3>
+<p>Silme aracı ilk kullanımda telefona iner; internetin açık olsun ve biraz bekleyip <b class="btn">Arka planı tekrar sil</b>'e dokun. Kıyafet zeminle aynı renkteyse ayırmak zorlaşır; farklı renkte bir zemine serip tekrar çek.</p>
+<h3>Mağaza linkinden ürün gelmiyor.</h3>
+<p>Linkin ürün sayfasına ait olduğundan emin ol (mağazanın ana sayfası değil). Yine olmazsa <b class="btn">Fotoğrafı kendim ekleyeyim</b> de; link kaydedilir.</p>
+<h3>Hiç öneri çıkmıyor.</h3>
+<p>Öneri için temiz (kirli sepetinde olmayan) en az bir üst + bir alt ya da bir elbise gerekir. Kirli sepetini kontrol et; seçili hava (ör. Sıcak) dolabındaki parçalara uymuyorsa <b>Tümü</b>'yü seç.</p>
+<h3>Bugünün havası görünmüyor.</h3>
+<p>Telefonun konumu açık olmalı ve Kombinim'e konum izni verilmeli: Telefon Ayarları → Uygulamalar → Kombinim → İzinler → Konum.</p>
+<h3>Doğrulama kodu e-postama gelmedi.</h3>
+<p>Spam / Gereksiz klasörüne bak, e-posta adresini doğru yazdığından emin ol, birkaç dakika sonra kodu tekrar iste.</p>
+<h3>Premium aldım ama görünmüyor.</h3>
+<p>İnternetin açık olsun; Premium ekranında <b class="btn">Satın alımlarımı geri yükle</b>'ye dokun. Google Play'de satın almayı yaptığın hesapla telefonda aynı Google hesabının açık olduğundan emin ol.</p>
+<h3>Yanlışlıkla "giydim"e bastım.</h3>
+<p>Hemen çıkan mesajdaki <b class="btn">Geri al</b>'a dokun. Kaçırdıysan Kirli sepeti'nde o parçaları <b class="btn">Yıkandı</b> yap.</p>
+<h3>Hesabımı nasıl silerim?</h3>
+<p>Profil → Hesap → <b>Hesabı sil</b> → <b class="btn">Hesabımı sil</b>. Ayrıntılar: <a href="hesap-silme.html">Hesap ve veri silme</a>.</p>
+
+<h2 id="iletisim">22. Bize ulaş</h2>
+<p>Soru, öneri ya da sorun için: <a href="mailto:konbinim.resmi@gmail.com">konbinim.resmi@gmail.com</a></p>
+<p class="muted">İlgili sayfalar: <a href="gizlilik.html">Gizlilik politikası</a> · <a href="kosullar.html">Kullanım koşulları</a> · <a href="hesap-silme.html">Hesap silme</a></p>
+</main>
+</body>
+</html>
